@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inside bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <header>
+        <h1 class="text-5xl font-semibold text-center mt-6">Pakhi 
+           <span class="font-semibold text-violet-600"> Taka Daw !!</span>
+        </h1>
+   </header>
+
+   <main>
+       <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                  <div class="bg-pink-600 p-8 rounded-xl">
+                       <h4 class="text-2xl font-medium">Deposit</h4>
+                       <h2 class="text-5xl font-medium">$<span id="depositTotal">00</span></h2>
+                  </div>
+
+                  <div class="bg-green-600 p-8 rounded-xl">
+                    <h4 class="text-2xl font-medium">Withdraw</h4>
+                    <h2 class="text-5xl font-medium">$<span id="WithdrowTotal">00</span></h2>
+                 </div>
+
+                 <div class="bg-amber-400 p-8 rounded-xl">
+                    <h4 class="text-2xl font-medium">Balance</h4>
+                    <h2 class="text-5xl font-medium">$<span id="blanceTotal">1240</span></h2>
+                 </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-12">
+
+                  <div class="bg-violet-500 p-8 space-y-3 rounded-lg">
+
+                       <h4 class="text-2xl font-medium text-white">Please Deposit</h4>
+
+                         <div class=" flex flex-col gap-3">
+                             
+                            <input type="number" id="depositBox" class="block w-9/12 px-4 py-1 rounded-md" placeholder="$amount you wont to deposit">
+
+                            <button id="btnDeposit" class="bg-indigo-800 px-8 py-2 w-4/12 text-white font-medium rounded-lg">Deposit</button>
+
+                         </div>
+
+                  </div>
+
+
+                  <div class="bg-fuchsia-400 p-8 rounded-md space-y-3">
+
+                    <h4 class="text-2xl font-medium text-white">Please Deposit</h4>
+
+                     <div class="flex flex-col gap-3">
+                        <input type="number" id="withdrowFild"  class="px-4 py-1 rounded-md w-9/12 block" placeholder="$amount you wont to deposit">
+
+                        <button id="btnWithdrow" class="bg-amber-600 px-8 py-2 text-white font-medium w-4/12 rounded-lg">Withdrow</button>
+                     </div>
+
+                  </div>
+            </div>
+       </section>
+   </main>
+
+   <script src="deposit.js"></script>
+   <script src="final-withdrow.js"></script>
+    
+</body>
+</html>
